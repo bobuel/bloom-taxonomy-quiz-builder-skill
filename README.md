@@ -89,7 +89,7 @@ Final output is a single **JSON object** with all 6 questions, ready to export.
 
 | File | Purpose |
 |------|---------|
-| `bloom-quiz-builder.skill` | Installable skill file for Claude |
+| `bloom-taxonomy-quiz-builder.skill` | Installable skill file for Claude |
 | `SKILL.md` | Human-readable skill instructions — the source of truth |
 | `README.md` | This file |
 
