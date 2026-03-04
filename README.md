@@ -4,7 +4,7 @@ A [Claude Skill](https://claude.ai) that helps teachers generate rigorous, Bloom
 
 Upload a document, article, or reading — and Claude will guide you through identifying themes, selecting question types, and building a validated question set across all six cognitive levels.
 
-I built this after the success of my [BloomGPT](https://chatgpt.com/g/g-qY82hT1eA-bloomgpt) which has been used over 1,000 times.
+I built this after the success of my custom GPT [BloomGPT](https://chatgpt.com/g/g-qY82hT1eA-bloomgpt) which has been used over 1,000 times.
 
 Enjoy! 
 
