@@ -68,7 +68,7 @@ Final output is a single **JSON object** with all 6 questions, ready to export.
 
 ## How to install
 
-1. Download [`bloom-quiz-builder.skill`](./bloom-quiz-builder.skill)
+1. Download [`bloom-taxonomy-quiz-builder.skill`](./bloom-taxonomy-quiz-builder.skill).
 2. In Claude, go to **Settings → Skills**
 3. Click **Upload Skill** and select the downloaded file
 4. Start a new conversation — Claude will automatically use the skill when you ask it to build a quiz or generate comprehension questions
