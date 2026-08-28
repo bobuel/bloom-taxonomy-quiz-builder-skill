@@ -1,0 +1,83 @@
+{
+  "theme": "How urban trees change neighborhood temperatures",
+  "tone": "Age-appropriate for grade 7",
+  "question_types": [
+    "Multiple choice",
+    "Select all that apply"
+  ],
+  "questions": [
+    {
+      "bloom_level": "Remember",
+      "question_set_rationale": "Checks a foundational mechanism named in the source.",
+      "question_rationale": "Asks students to recall the term for water moving through leaves.",
+      "question": "What process moves water from the soil to the air through tree leaves?",
+      "answers": ["Transpiration", "Reflection", "Insulation", "Condensation"],
+      "correct_answer": "Transpiration",
+      "correct_answer_rationale": "The passage names transpiration as the movement of water from soil to air through leaves.",
+      "correct_answer_reference": "Paragraph 2",
+      "comprehension_reference": "The student identifies a directly stated scientific term.",
+      "difficulty": "Easy"
+    },
+    {
+      "bloom_level": "Understand",
+      "question_set_rationale": "Checks understanding of the relationship between shade and surface temperature.",
+      "question_rationale": "Requires explaining the source mechanism rather than recalling a term.",
+      "question": "Why can a shaded sidewalk release less heat later in the day?",
+      "answers": ["It absorbed less solar energy", "It received more rainwater", "It became darker in color", "It produced more wind"],
+      "correct_answer": "It absorbed less solar energy",
+      "correct_answer_rationale": "The source says shaded surfaces absorb less solar energy, stay cooler, and release less heat.",
+      "correct_answer_reference": "Paragraph 1",
+      "comprehension_reference": "The student connects shade, energy absorption, and later heat release.",
+      "difficulty": "Easy"
+    },
+    {
+      "bloom_level": "Apply",
+      "question_set_rationale": "Applies the source’s planning criteria to a new neighborhood scenario.",
+      "question_rationale": "Students use the stated factors to choose a plausible planting priority.",
+      "question": "Which location best matches the passage’s approach to prioritizing new trees?",
+      "answers": ["A hot block with little canopy and many heat-vulnerable residents", "A cool park with mature trees and low foot traffic", "A shaded block selected only because land is inexpensive", "A windy plaza where no one lives or waits"],
+      "correct_answer": "A hot block with little canopy and many heat-vulnerable residents",
+      "correct_answer_rationale": "The passage says planners combine temperature measurements with population-vulnerability information.",
+      "correct_answer_reference": "Paragraph 3",
+      "comprehension_reference": "The student transfers two source criteria to a new case.",
+      "difficulty": "Moderate"
+    },
+    {
+      "bloom_level": "Analyze",
+      "question_set_rationale": "Analyzes the causal chain connecting canopy shade to neighborhood heat.",
+      "question_rationale": "Students must order related mechanisms rather than recognize one fact.",
+      "question": "Which chain best explains how street trees can lower summer heat risk?",
+      "answers": ["More shade → cooler surfaces → less heat released into nearby air", "More roots → darker pavement → more heat stored overnight", "More leaves → less rainfall → lower afternoon humidity", "More branches → taller buildings → stronger winter winds"],
+      "correct_answer": "More shade → cooler surfaces → less heat released into nearby air",
+      "correct_answer_rationale": "This sequence matches the causal explanation in the first paragraph.",
+      "correct_answer_reference": "Paragraph 1",
+      "comprehension_reference": "The student distinguishes a supported causal chain from plausible-sounding alternatives.",
+      "difficulty": "Hard"
+    },
+    {
+      "bloom_level": "Evaluate",
+      "question_set_rationale": "Evaluates a proposed heat strategy against the source’s constraints.",
+      "question_rationale": "Students judge a plan using multiple pieces of evidence.",
+      "question": "A city proposes planting trees as its only heat-response program. Which evidence from the passage most strongly challenges that plan?",
+      "answers": ["Trees are not a complete solution, and other approaches address needs they cannot", "Leaves can block sunlight from pavement", "Young trees can grow larger canopies over time", "Transpiration moves water through leaves"],
+      "correct_answer": "Trees are not a complete solution, and other approaches address needs they cannot",
+      "correct_answer_rationale": "The final paragraph explicitly argues for combining trees with several other interventions.",
+      "correct_answer_reference": "Paragraph 4",
+      "comprehension_reference": "The student selects the evidence most relevant to judging the completeness of a policy.",
+      "difficulty": "Hard"
+    },
+    {
+      "bloom_level": "Create",
+      "question_set_rationale": "Uses the source to design a defensible multi-part heat plan.",
+      "question_rationale": "The selected response combines mechanisms, implementation constraints, and complementary interventions.",
+      "question": "Which plan best combines the passage’s ideas into a new neighborhood heat strategy?",
+      "answers": ["Prioritize hot, vulnerable blocks for climate-suitable trees, fund maintenance, and add shade and building improvements", "Plant the fastest-growing tree species everywhere and end all other heat programs", "Measure temperatures but ignore resident vulnerability and long-term tree care", "Build cooling centers only and remove existing street trees to reduce watering"],
+      "correct_answer": "Prioritize hot, vulnerable blocks for climate-suitable trees, fund maintenance, and add shade and building improvements",
+      "correct_answer_rationale": "This plan integrates targeting, species suitability, maintenance, and multiple interventions from the source.",
+      "correct_answer_reference": "Paragraphs 3–4",
+      "comprehension_reference": "The student combines several source principles into a coherent new plan.",
+      "difficulty": "Hard"
+    }
+  ]
+}
+

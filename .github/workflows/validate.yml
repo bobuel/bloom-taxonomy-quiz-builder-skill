@@ -1,0 +1,30 @@
+name: Validate showcase
+
+on:
+  push:
+    branches: [main, "codex/**"]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify skill archive
+        run: unzip -l bloom-taxonomy-quiz-builder.skill | grep -q "bloom-quiz-builder/SKILL.md"
+      - name: Verify sample JSON and Bloom levels
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          data = json.loads(Path("examples/sample-output.json").read_text())
+          levels = {question["bloom_level"] for question in data["questions"]}
+          expected = {"Remember", "Understand", "Apply", "Analyze", "Evaluate", "Create"}
+          assert len(data["questions"]) == 6
+          assert levels == expected
+          PY
+
