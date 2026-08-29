@@ -1,10 +1,10 @@
-# Bloom’s Quiz Builder — Claude Skill
+# Bloom’s Taxonomy Quiz Builder Skill
 
 A source-grounded assessment workflow that helps teachers build and review one question at each of Bloom’s six cognitive levels.
 
 I built this after [BloomGPT](https://chatgpt.com/g/g-qY82hT1eA-bloomgpt) crossed **1,000+ uses**. That signal showed real demand; this skill turns the original prompt experience into a more explicit workflow with teacher choices, per-question checkpoints, answer evidence, and structured output.
 
-[Read the product case study](https://aydoon.com/case-studies/bloom-assessment-workflow) · [View Alex Aidun’s portfolio](https://aydoon.com) · [GitHub profile](https://github.com/bobuel)
+[Read the product case study](https://bobuel.github.io/aydoon/case-studies/bloom-assessment-workflow) · [View Alex Aidun’s portfolio](https://bobuel.github.io/aydoon/) · [GitHub profile](https://github.com/bobuel)
 
 ## Workflow
 
