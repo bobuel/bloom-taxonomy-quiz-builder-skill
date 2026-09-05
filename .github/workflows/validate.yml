@@ -1,0 +1,40 @@
+name: Validate showcase
+
+on:
+  push:
+    branches: [main, "codex/**"]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify skill archive
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from zipfile import ZipFile
+
+          with ZipFile("bloom-taxonomy-quiz-builder.skill") as archive:
+              packaged = archive.read("bloom-quiz-builder/SKILL.md").decode("utf-8")
+          source = Path("SKILL.md").read_text(encoding="utf-8")
+          normalize = lambda text: text.replace("\r\n", "\n").strip()
+          assert normalize(packaged) == normalize(source), "Rebuild the skill archive after changing SKILL.md"
+          PY
+      - name: Verify sample JSON and Bloom levels
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          data = json.loads(Path("examples/sample-output.json").read_text())
+          levels = {question["bloom_level"] for question in data["questions"]}
+          expected = {"Remember", "Understand", "Apply", "Analyze", "Evaluate", "Create"}
+          assert len(data["questions"]) == 6
+          assert levels == expected
+          PY
+
