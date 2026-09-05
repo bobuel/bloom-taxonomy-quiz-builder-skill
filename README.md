@@ -4,7 +4,7 @@ A source-grounded assessment workflow that helps teachers build and review one q
 
 I built this after [BloomGPT](https://chatgpt.com/g/g-qY82hT1eA-bloomgpt) crossed **1,000+ uses**. That signal showed real demand; this skill turns the original prompt experience into a more explicit workflow with teacher choices, per-question checkpoints, answer evidence, and structured output.
 
-[Read the product case study](https://bobuel.github.io/aydoon/case-studies/bloom-assessment-workflow) · [View Alex Aidun’s portfolio](https://bobuel.github.io/aydoon/) · [GitHub profile](https://github.com/bobuel)
+[Read the case study](https://aydoon.com/case-studies/bloom-assessment-workflow) · [Website](https://aydoon.com/) · [GitHub](https://github.com/bobuel)
 
 ## Workflow
 
@@ -22,7 +22,7 @@ flowchart LR
     G -- Yes --> H[Export one structured JSON set]
 ```
 
-The important product decision is the approval loop: the skill does not treat teacher review as cleanup after generation. Review is part of generation.
+Teacher review is part of generation. Each question has an approval checkpoint before the workflow continues.
 
 ## What it produces
 
@@ -112,7 +112,7 @@ Requirements: a Claude account and plan with Skills enabled.
 
 ## Validation and contribution
 
-The branch workflow verifies that the `.skill` archive contains `bloom-quiz-builder/SKILL.md` and that the sample output is valid JSON with six unique Bloom levels.
+The workflow verifies that the packaged `bloom-quiz-builder/SKILL.md` matches the source instructions and that the sample output is valid JSON with six unique Bloom levels. These are packaging and fixture checks, not a measurement of generated-question quality.
 
 For instruction changes, edit `SKILL.md`, rebuild the `.skill` archive, and open a pull request with a short example showing the behavioral change.
 
